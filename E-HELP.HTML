@@ -1,0 +1,98 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Help</title>
+    <link rel="stylesheet" href="./style1.css"/>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a href=""></a>
+            <nav>
+                <a href="file:///C:/Users/HP/index.html">home</a>
+                <a href="#">About us</a>
+                <a href="#">Service</a>
+                <a href="#">Contact</a>
+                <a href="#">Explore</a>
+            </nav>
+
+        </div>
+    </header>
+    <main>
+        <div class="banner-container">
+            <div class="container">
+                <div class="left-section">
+                    <h1>Welcome to E-Help.com</h1>
+                    <p>Service the Electronic items through our website.Make your life easy and were here to help you </p>
+                    <button class='loginbtn' onclick="document.getElementById('login-form').style.display='block'" style="width:auto;">Login</button>
+                </div>
+              
+                   
+                    <div id='login-form'class='login-page'>
+                        <div class="form-box">
+                            <div class='button-box'>
+                                <div id='btn'></div>
+                                <button type='button'onclick='login()'class='toggle-btn'>Log In</button>
+                                <button type='button'onclick='register()'class='toggle-btn'>Register</button>
+                            </div>
+                            <form id='login' class='input-group-login'>
+                                <input type='text'class='input-field'placeholder='Email Id' required >
+                        <input type='password'class='input-field'placeholder='Enter Password' required>
+                        <input type='checkbox'class='check-box'><span>Remember Password</span>
+                       <a href="file:///C:/Users/HP/index2.html"> <button type='submit'class='submit-btn'>Log in</button></a>
+                     </form>
+                     <form id='register' class='input-group-register'>
+                        
+                         <input type='text'class='input-field'placeholder='First Name' required>
+                         <input type='text'class='input-field'placeholder='Last Name ' required>
+                         <input type='email'class='input-field'placeholder='Email Id' required>
+                         <input type='password'class='input-field'placeholder='Enter Password' required>
+                         <input type='password'class='input-field'placeholder='Confirm Password'  required>
+                         <input type='checkbox'class='check-box'><span>I agree to the terms and conditions</span>
+                              <a href="file:///C:/Users/HP/index2.html"></a> <button type="submit" class="submit-btn">Register</button></a>
+                        
+                         </form>
+                         <script>
+                            var x=document.getElementById('login');
+                            var y=document.getElementById('register');
+                            var z=document.getElementById('btn');
+                            function register()
+                            {
+                                x.style.left='-400px';
+                                y.style.left='50px';
+                                z.style.left='110px';
+                            }
+                            function login()
+                            {
+                                x.style.left='50px';
+                                y.style.left='450px';
+                                z.style.left='0px';
+                            }
+                        </script>
+                        <script>
+                            var modal = document.getElementByI("file:///C:/Users/HP/index2.html");
+                            
+                            window.onclick = function(event) 
+                            {
+                                if (event.target == "file:///C:/Users/HP/index2.html") 
+                                {
+                                    modal.style.display = "none";
+                                }
+                            }
+                        </script>
+                        </div>
+                    </div>
+                </div>
+                </div>
+              
+            </div>
+        </div>
+     
+    </main>
+   
+</body>
+</html>
